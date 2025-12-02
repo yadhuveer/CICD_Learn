@@ -17,7 +17,6 @@ app.get("/api/users", (req: Request, res: Response) => {
   const users = [
     { id: 1, name: "Alice", email: "alice@example.com" },
     { id: 2, name: "Bob", email: "bob@example.com" },
-    { id: 3, name: "Bob", email: "bob@example.com" },
   ];
   res.json(users);
 });
@@ -33,5 +32,5 @@ if (require.main === module) {
     console.log(`Server is running on http://localhost:${PORT}`);
   });
 }
-
+console.log("Hi");
 export default app;
